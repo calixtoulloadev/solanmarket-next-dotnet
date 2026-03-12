@@ -1,0 +1,6 @@
+@Solanmarket.API_HostAddress = http://localhost:5085
+
+GET {{Solanmarket.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

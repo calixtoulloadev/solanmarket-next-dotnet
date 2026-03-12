@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  /* ── Solanmarket Design Tokens ── */
+  --cream: #F7F3EE;
+  --blush: #F2E8E1;
+  --sage: #D6E4D8;
+  --lavender: #E8E2F4;
+  --accent: #9B6B9B;
+  --accent-l: #C49BCE;
+  --dark: #2A2430;
+  --muted: #7A7085;
+
+  /* Admin panel */
+  --admin-bg: #0F0D14;
+  --admin-card: #1A1624;
+  --admin-border: #2E2840;
+  --admin-accent: #9B6B9B;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+/* ── Gradient mesh background ── */
+.bg-mesh {
+  background:
+    radial-gradient(ellipse 60% 40% at 10% 10%, #e8e2f455 0%, transparent 70%),
+    radial-gradient(ellipse 50% 50% at 90% 20%, #d6e4d855 0%, transparent 60%),
+    radial-gradient(ellipse 40% 60% at 50% 80%, #f2e8e155 0%, transparent 70%),
+    var(--cream);
+  min-height: 100vh;
+}
+
+/* ── Typography ── */
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* ── Glass card ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* ── Scrollbar ── */
+.styled-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.styled-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.styled-scroll::-webkit-scrollbar-thumb {
+  background: var(--accent-l);
+  border-radius: 2px;
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Solanmarket.API/Solanmarket.API.csproj" />
+  <Project Path="Solanmarket.Application/Solanmarket.Application.csproj" />
+  <Project Path="Solanmarket.Domain/Solanmarket.Domain.csproj" />
+  <Project Path="Solanmarket.Infrastructure/Solanmarket.Infrastructure.csproj" />
+  <Project Path="Solanmarket.Tests/Solanmarket.Tests.csproj" />
+</Solution>

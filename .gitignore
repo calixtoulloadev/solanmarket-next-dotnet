@@ -1,0 +1,19 @@
+# .NET
+bin/
+obj/
+
+# Flutter
+.dart_tool/
+build/
+
+# Env
+.env
+
+# logs
+*.log
+
+# Mac
+.DS_Store
+
+# estructura
+*.md
